@@ -6,14 +6,14 @@ terraform {
     }
   }
 
-  # backend "s3" {
-  #   bucket         = "terraform-state-nadin"
-  #   key            = "terraform.tfstate"
-  #   region         = "us-east-1"
-  #   dynamodb_table = "terraform-state-lock-nadin"
+  backend "s3" {
+    bucket         = "terraform-state-nadin"
+    key            = "terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-state-lock-nadin"
     
 
-  # }
+  }
 }
 provider "aws" {
   region                   = "us-east-1"
