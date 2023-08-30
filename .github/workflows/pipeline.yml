@@ -9,7 +9,7 @@ jobs:
 
   job-Terraform_Apply:
     runs-on: ubuntu-latest
-    enviroment: Keys
+    environment: Keys
  
     steps:
 
